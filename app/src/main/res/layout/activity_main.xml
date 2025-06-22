@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -16,6 +17,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <Switch
+            android:id="@+id/switchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modo Oscuro"
+            android:layout_marginBottom="16dp"/>
+
 
         <EditText
             android:id="@+id/editTextUsername"
@@ -45,6 +54,22 @@
             android:layout_height="wrap_content"
             android:text="Limpiar Todo"
             android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonResetCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resetear contador de visitas"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonGoToProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir a Perfil de Usuario"
+            android:layout_marginBottom="16dp" />
+
+
 
         <TextView
             android:id="@+id/textViewResult"
